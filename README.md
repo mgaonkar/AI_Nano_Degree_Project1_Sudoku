@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: If units have two cells (boxes) with the values 'XY'/'YX', we apply the constraint that other peers can not have the value as 
+   either 'X' or 'Y'. We propagate this constraint to other peers to reduce the search space such that X and Y are no longer          under consideration as possible values for the peers.
+   
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We define an additional class of unit (diagonal peers make up these 2 units) as a constraint. We propogate this constraint to      the rest of the grid to reduce the search space. 
 
 ### Install
 
